@@ -1,6 +1,12 @@
 function suggestSong(event) {
   event.preventDefault();
-  alert("Finding a song...");
+
+  new Typewriter("#song-suggestion", {
+    strings: "My favorite song right now is Jaded by Miley Cyrus",
+    autoStart: true,
+    cursor: "",
+    delay: natural,
+  });
 }
 
 let songButtonElement = document.querySelector("#song-button");
